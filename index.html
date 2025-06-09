@@ -1,176 +1,186 @@
- <!DOCTYPE html>
-<html>
-    <meta charset="utf-8">
-    <head>
-        <title>Chente - Vicente Fernandez</title>
-        
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Chente - Vicente Fernandez</title>
+    <style>
+        body {
+            background-color: green;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
 
-        <CENTER>       
-            <h1>
-                <br> <font color="black">Vicente Fernandez "CHENTE"</font></br>
-            </h1> 
-            <table border="30px">
-                <tr>
-                    <td><img src="D:\practicas html\imagen\AJA.jpg" alt="CHENTE"></td>
-                </tr>
-            </table>
-  
-            <hr>
-     
-            <table border bgcolor="blue">
-                <tr>
-                    <td>
-                        <p style="color:white;">Vicente Fernandez alias "CHENTE" es un cantante, musico, artista y un simbolo de la musica mexicana que ha marcado a miles de millones de personas.</p>
-                    </td>
-                </tr>
-            </table>
-            <table border bgcolor="blue">
-                <tr>
-                    <td>
-                        <p style="color:white;">(Huentitán el Alto, Jalisco, 1940 - Guadalajara, 2021) Cantante mexicano, último de los intérpretes míticos de la canción ranchera. Este género romántico y sentimental, cuyos orígenes se remontan al siglo XIX y que tuvo su cuna en el estado de Jalisco, conoció gran difusión a partir de los años 30 y 40 del siglo XX de la mano de los mariachis, conjuntos musicales de atuendo y repertorio tradicionales que incursionaron con éxito en la radio y en el cine y cobraron un inmensa popularidad.
+        h1, h2 {
+            text-align: center;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+            border: 3px solid blue;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        .image-container img {
+            width: 150px;
+            height: 150px;
+            border: 3px solid blue;
+            padding: 5px;
+        }
+
+        #header {
+            width: 100%;
+            background: black;
+        }
+
+        .nav {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav > li {
+            position: relative;
+        }
+
+        .nav li a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            background: #000;
+            color: white;
+        }
+
+        .nav li a:hover {
+            background: #434343;
+        }
+
+        .nav li ul {
+            display: none;
+            position: absolute;
+            background: #000;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            top: 100%;
+        }
+
+        .nav li:hover ul {
+            display: block;
+        }
+
+        .nav li ul li {
+            width: 180px;
+        }
+
+        .form-container {
+            background-color: #222;
+            padding: 20px;
+            margin: 20px auto;
+            width: 50%;
+            border: 2px solid white;
+        }
+
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        video {
+            display: block;
+            margin: 0 auto;
+            border: 3px solid white;
+        }
+
+        .bio-section {
+            background-color: blue;
+            color: white;
+            padding: 15px;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <ul class="nav">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a>
+                <ul>
+                    <li><a href="#">Submenu1</a></li>
+                    <li><a href="#">Submenu2</a></li>
+                    <li><a href="#">Submenu3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Acerca de</a>
+                <ul>
+                    <li><a href="#">Maximiliano Farias Valle / Informática 406</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <h1>Vicente Fernandez "CHENTE"</h1>
+
+    <div style="text-align: center;">
+        <img src="E:\practicas html\pagina CHENTE\imagen/AJA.jpg" alt="CHENTE" width="300">
+    </div>
+
+    <hr>
+
+    <div class="bio-section">
+        <p>Vicente Fernandez alias "CHENTE" es un cantante, músico, artista y un símbolo de la música mexicana que ha marcado a miles de millones de personas.</p>
+    </div>
+
+    <div class="bio-section">
+        <p>(Huentitán el Alto, Jalisco, 1940 - Guadalajara, 2021) Cantante mexicano, último de los intérpretes míticos de la canción ranchera. Este género romántico y sentimental, cuyos orígenes se remontan al siglo XIX y que tuvo su cuna en el estado de Jalisco, conoció gran difusión a partir de los años 30 y 40 del siglo XX de la mano de los mariachis, conjuntos musicales de atuendo y repertorio tradicionales que incursionaron con éxito en la radio y en el cine y cobraron un inmensa popularidad.
 Vicente Fernández Gómez nació el 17 de febrero de 1940 en la localidad mexicana de Huentitán el Alto, en tierras de Jalisco. Su familia era de clase humilde y desde muy niño se vio obligado a trabajar en diferentes oficios para ganar algo de dinero y poder sobrevivir dignamente. Nada en sus orígenes ni ancestros hacia presagiar que con los años se le conocería como El charro de Huentitán y recibiría de sus admiradores calificativos tan elogiosos como El rey de la canción ranchera.
 
 El pequeño Chente, como era familiarmente llamado entonces, tenía sin embargo ideas claras: su ídolo era el también cantante de rancheras y actor Pedro Infante, cuyas películas devoraba en el cine. Quería ser como él, y a los ocho años comenzó a rasguear la guitarra y a cantar las rancheras que oía en la radio. Los inicios no fueron fáciles: había que compaginar la música con la supervivencia, estar dispuesto a actuar en los más precarios escenarios y aprovechar la más pequeña oportunidad para darse a conocer, ni que fuese en círculos reducidos o en certámenes de aficionados.</p>
-                    </td>
-                </tr>
-            </table>
-            <marquee="30px" direction="down" width="400" height="200" behavior="alternate" style="border:solid">
-                <marquee behavior="alternate">
-                    <img src="D:\practicas html\imagen\pr.jpg" alt="CHENTE">
-                </marquee>
-            </marquee>
-            <h1 font bgcolor="white">MI CANCION FAVORITA</h1>
-            <video width="640" height="360" controls>
-                <source src="D:\practicas html\imagen\Vicente Fernández - A Mi Manera (En Vivo)[Un Azteca en el Azteca].MP4" type="video/mp4">
-                Tu navegador no soporta el formato de video.
-            </video>
+    </div>
 
-            <!-- Cuadro de imágenes -->
-            <div class="image-container">
-                <img src="D:\practicas html\imagen\o.jpg" alt="Imagen 1">
-                <img src="D:\practicas html\imagen\ima2.jpg" alt="Imagen 2">
-                <img src="D:\practicas html\imagen\ima3.jpg" alt="Imagen 3">
-            </div>
-            <style type="text/css">
-            * {
-                margin:0px;
-                padding:0px;
-            }
+    <h2>Galería de Imágenes</h2>
+    <div class="image-container">
+        <img src="E:\practicas html\pagina CHENTE\imagen/o.jpg" alt="Imagen 1">
+        <img src="E:\practicas html\pagina CHENTE\imagen/ima2.jpg" alt="Imagen 2">
+        <img src="E:\practicas html\pagina CHENTE\imagen/ima3.jpg" alt="Imagen 3">
+    </div>
 
-            #header {
-                margin:auto;
-                width:500px;
-                font-family:Arial, Helvetica, sans-serif;
-            }
+    <h2>Mi Canción Favorita</h2>
+    <video width="640" height="360" controls>
+        <source src="E:\practicas html\pagina CHENTE\imagen/Vicente Fernández - A Mi Manera (En Vivo)[Un Azteca en el Azteca].MP4" type="video/mp4">
+        Tu navegador no soporta el formato de video.
+    </video>
 
-            ul, ol {
-                list-style:none;
-            }
+    <h2>Formulario de Contacto</h2>
+    <div class="form-container">
+        <form action="#" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
 
-            .nav > li {
-                float:left;
-            }
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
 
-            .nav li a {
-                background-color:#000;
-                color:#fff;
-                text-decoration:none;
-                padding:10px 12px;
-                display:block;
-            }
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-            .nav li a:hover {
-                background-color:#434343;
-            }
-
-            .nav li ul {
-                display:none;
-                position:absolute;
-                min-width:140px;
-            }
-
-            .nav li:hover > ul {
-                display:block;
-            }
-
-            .nav li ul li {
-                position:relative;
-            }
-
-            .nav li ul li ul {
-                right:-140px;
-                top:0px;
-            }
-
-            /* Estilo para el cuadro de imágenes */
-            .image-container {
-                display: flex;
-                justify-content: space-around;
-                margin-top: 20px;
-                padding: 10px;
-                border: 2px solid black;
-                background-color: lightgray;
-            }
-
-            .image-container img {
-                width: 150px;
-                height: 150px;
-                border: 2px solid #000;
-                padding: 5px;
-            }
-        </style>
-    </head>
-    <body bgcolor="green">
-        <div id="header">
-            <ul class="nav">
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Servicios</a>
-                    <ul>
-                        <li><a href="">Submenu1</a></li>
-                        <li><a href="">Submenu2</a></li>
-                        <li><a href="">Submenu3</a></li>
-                        <li><a href="">Submenu4</a>
-                            <ul>
-                                <li><a href="">Submenu1</a></li>
-                                <li><a href="">Submenu2</a></li>
-                                <li><a href="">Submenu3</a></li>
-                                <li><a href="">Submenu4</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="">Acerca de</a>
-                    <ul>
-                        <li><a href="">Maximiliano farias valle/Informatica 406</a></li>
-                         <li><a href="">hola</a></li>
-                    </ul>
-                </li>
-                <div id="after_submit"></div>
-<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-  <div class="row">
-    <label class="required" for="name">Your name:</label><br />
-    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-    <span id="name_validation" class="error_message"></span>
-  </div>
-  <div class="row">
-    <label class="required" for="email">Your email:</label><br />
-    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-    <span id="email_validation" class="error_message"></span>
-  </div>
-  <div class="row">
-    <label class="required" for="message">Your message:</label><br />
-    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-    <span id="message_validation" class="error_message"></span>
-  </div>
-    
-    <input id="submit_button" type="submit" value="Send email" />
-</form>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
 
 </body>
-</html>
-
-            </ul>
-        </div>
-        </CENTER>
-    </body>
 </html>
